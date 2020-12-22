@@ -1,3 +1,4 @@
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -38,11 +39,11 @@
   justify-content: center;
   align-items: center;
   z-index: 2;
-}
-.header__title_text{
   font-size: 102px;
   font-weight: bold;
   line-height: 96px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .header__subtitle{
   position: absolute;
@@ -52,8 +53,6 @@
   z-index: 2;
   margin-top: 0;
   margin-bottom: 0;
-}
-.header__subtitle_text{
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -95,11 +94,11 @@
 .two-columns__brief{
   width: 175px;
   color: #2f80ed;
-}
-.two-columns__brief-text{
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .two-columns__main-text{
   width: 80%;
@@ -108,14 +107,12 @@
 .two-columns__paragraph {
   margin-bottom: 30px;
   margin-top: 0;
-}
-.two-columns__paragraph:last-of-type{
-  margin-bottom: 0px;
-}
-.two-columns__paragraph-text{
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+}
+.two-columns__paragraph:last-of-type{
+  margin-bottom: 0px;
 }
 .two-columns__span-accent{
 line-height: 34px;
@@ -132,24 +129,26 @@ font-weight: bold;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
-  margin-top: 100px;
-}
+ }
 .section-subtitle{
   width: 60%;
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin-top: 20px;
 }
 .table{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 1100px;
+  justify-content: center;
   margin-bottom: 100px;
+}
+.table__row{
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  margin: 0 auto;
 }
 .table__cell{
   vertical-align: top;
@@ -161,6 +160,7 @@ line-height: 1.15;
 font-size: 24px;
 font-weight: bold;
 margin-top: 60px;
+margin-bottom: 0;
 }
 .table__text{
   margin-top: 20px;
@@ -168,6 +168,7 @@ margin-top: 60px;
   font-size: 18px;
   font-weight: normal;
   text-align: left;
+  margin-bottom: 0;
 }
 .feynman{
   display: flex;
@@ -232,8 +233,7 @@ margin-top: 60px;
   width: 200px;
   color: white;
   margin-right: 0;
-  margin-top: 80px;
-  }
+}
 .table__heading_theme_dark{
   line-height: 1.15;
   font-size: 24px;
@@ -242,11 +242,8 @@ margin-top: 60px;
   margin-top: 80px;
 }
 .table__text_theme_dark{
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
   color: white;
-  margin-top: 20px;
+  text-align: left;
 }
 .kaufman__triangle{
   height: 877px;
@@ -258,31 +255,34 @@ margin-top: 60px;
   background-size: cover;
 }
 .footer{
+  box-sizing: border-box;
   display: flex;
   background-color: #1f1f1f;
   min-height: 350px;
   justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 .footer__columns{
   width: 90%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
-.footer__column{
-  padding-top: 60px;
-  margin-bottom: 40px;
-}
+/*.footer__column{}  По БЭМу я должен применить этот блок, но никаких параметров для него задать не могу*/
 .footer__column_content_copyright{
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .footer__column_content_info{
-margin: 0 auto 0;
-
+display: flex;
+flex-direction: column;
 }
 .footer__column-heading{
   margin-bottom: 20px;
+  margin-top: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
@@ -291,20 +291,24 @@ margin: 0 auto 0;
 .footer__column-links{
   color: white;
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: 0;
   padding-left: 0;
-}
+  padding-bottom: 16px;
+  }
 .footer__column_content_social{
-  margin-left: auto;
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
 }
-.footer__column_social-icon{
+.footer__social-icon{
   height: 16px;
   width: 16px;
   padding-right: 10px;
-  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  justify-content: center;
 }
 .footer__column-link{
   line-height: 30px;
@@ -324,10 +328,9 @@ margin: 0 auto 0;
 }
 .footer__author{
   color: white;
-  padding-top: 16px;
-  margin-top: auto;
+  padding-top: 18px;
   margin-bottom: 0;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
   margin-left: 0;
   line-height: 25px;
   font-size: 18px;
