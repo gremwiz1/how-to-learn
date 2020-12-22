@@ -269,7 +269,7 @@ margin-bottom: 0;
   flex-direction: row;
   justify-content: space-between;
 }
-/*.footer__column{}  По БЭМу я должен применить этот блок, но никаких параметров для него задать не могу*/
+/*.footer__column{}  */
 .footer__column_content_copyright{
   flex-basis: 711px;
   display: flex;
