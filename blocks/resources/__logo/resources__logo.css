@@ -1,9 +1,12 @@
 .resources__logo {
   height: 38px;
   width: 270px;
-  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  text-align: center;
+  transition-duration: 1s;
 }
 .resources__logo:hover {
   opacity: 0.5;
-  transition-duration: 1s;
 }

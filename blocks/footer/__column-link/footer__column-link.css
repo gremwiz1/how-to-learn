@@ -5,8 +5,8 @@
   color: white;
   text-decoration: none;
   display: flex;
-  }
+  transition-duration: 1s;
+}
 .footer__column-link:hover {
   opacity: 0.5;
-  transition-duration: 1s;
 }

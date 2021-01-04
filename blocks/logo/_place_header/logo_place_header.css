@@ -6,4 +6,5 @@
   min-width: 183px;
   min-height: 32px;
   background-image: url(../../../images/logo_place_header.svg);
+  transition-duration: 1s;
 }

@@ -5,5 +5,6 @@
   margin-left: 0;
   background-image: url(../../../images/logo_place_footer.svg);
   background-repeat: no-repeat;
+  transition-duration: 1s;
 }
 
